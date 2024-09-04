@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="ControlAcceso" namespace="ControlAcceso.Entidades">
+  <class name="Privilegio" table="privilegio" batch-size="10" >
+    <id name="Id" column ="id_privilegio" type="int" unsaved-value="0">
+      <generator class="native"/>
+    </id>
+
+    <property name="Descripcion" column ="descripcion"/>
+    <property name="Modulo" column ="modulo"/>
+
+  </class>
+</hibernate-mapping>
